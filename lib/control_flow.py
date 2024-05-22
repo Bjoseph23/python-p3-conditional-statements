@@ -28,19 +28,16 @@ def fizzbuzz(num):
          return "Buzz"
      else:
          return num
-    
 
 def calculator(operation, num1, num2):
-     if operation == "+":
-         return num1 + num2
-     elif operation == "-":
-         return num1 - num2
-     elif operation == "*":
-         return num1 * num2
-     elif operation == "/":
-         if num2 == 0 :
-             print("Invalid operation!")
-             return None 
-         else:
-             return num1 / num2
-# and operation != "+" and operation != "-" and operation != "*" and operation != "/"
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        return num1 / num2
+
+    print("Invalid operation!")
+    return None
